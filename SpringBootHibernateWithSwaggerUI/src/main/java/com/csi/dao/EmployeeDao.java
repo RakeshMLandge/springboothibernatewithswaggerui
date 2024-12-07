@@ -1,4 +1,13 @@
+package com.csi.dao;
 
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.csi.model.Employee;
+
+@Component
+public interface EmployeeDao {
 
 	public void signUp(Employee employee);
 	
@@ -21,3 +30,4 @@
 	public void deleteDataById(int empId);
 	
 	public void deleteAllData();
+}
